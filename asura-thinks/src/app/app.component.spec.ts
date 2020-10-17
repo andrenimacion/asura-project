@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'asura-thinks'`, () => {
+  it(`should have as title 'ng'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('asura-thinks');
+    expect(app.title).toEqual('ng');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('asura-thinks app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ng app is running!');
   });
 });

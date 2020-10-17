@@ -1,18 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
-import { WorkAreaComponent } from './work-area/work-area.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    WorkAreaComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -21,9 +21,12 @@ import { WorkAreaComponent } from './work-area/work-area.component';
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: 'Work', component: WorkAreaComponent },
-      { path: 'Login', component: LoginComponent, pathMatch: 'full' },
-      { path: '**', pathMatch: 'full', redirectTo: 'Login'  }
+      // { path: 'Conf', component: ConfigurationsComponent },
+      // { path: 'HomeView', component: HomeViewComponent },
+      // { path: 'Reporte', component: ReporteComponent },
+       { path: 'ThinkBoard', component: DashboardComponent },
+       { path: 'Login', component: LoginComponent, pathMatch: 'full' },
+       { path: '**', pathMatch: 'full', redirectTo: 'Login'  }
     ])
   ],
   providers: [],

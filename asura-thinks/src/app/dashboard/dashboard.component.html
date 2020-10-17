@@ -1,0 +1,26 @@
+<section class="dashHead container-fluid">
+    <header class="title">
+
+        <button class="btn" id="create" (click)="cThink()">
+          <span class=" icon-lamp"></span>
+        </button>
+        <section class="Bienv">
+            <strong>Bienvenido: {{_UserStorage}}</strong>
+        </section>
+
+        <section class="button" (click)="logout()">
+            <span class="icon-off"></span>
+        </section>
+    </header>
+</section>
+<!-- <div id="div1" style="width: 100px; height: 100px; top:0; left:0; background:#e53935 ; position:absolute;"></div>
+<div id="div2" style="width: 100px; height: 100px; top:0; left:300px; background:#4527a0 ; position:absolute;"></div> -->
+<!-- <svg width="500" height="500"><line x1="50" y1="50" x2="350" y2="200"   stroke="red"/></svg> -->
+<!-- <svg width=300 height=200>
+  <path d="M 10 150 C 100 75  300 50 500 250 M 190 150 z"
+        stroke="navy" stroke-width=3 fill="white"  />
+  </svg> -->
+
+<section class="dashBody display d-flex flex-wrap">
+    <section class="think-work-area" id="think-work-area"></section>
+</section>

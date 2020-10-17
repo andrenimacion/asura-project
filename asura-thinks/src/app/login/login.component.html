@@ -1,29 +1,24 @@
-<!-- <div class="Title animated tada slow"> -->
-<!--<img src="../assets/log.png" width="300px" height="auto" />-->
-<!-- <h3 class="text mt-2" style="color:mediumpurple;">
-        <span class="icon-emo-happy"></span> ¡Bienvenido!
-    </h3>
-</div> -->
-<!-- <section id="inWorks" (keyup.enter)="validacion()">
-    <div class="inputs">
-        <label><span class="icon-mail"></span>Email</label>
-        <input type="email" [(ngModel)]="iUser.correo" name="correo" placeholder="Ingrese el email" style="padding: 7px;" />
+<div class="d container-fluid display d-flex justify-content-center align-items-center" [ngStyle]="{'height': _height}">
+    <div class="formLog">
+        <div class="title">Login</div>
+        <hr>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email:</label>
+                <input type="email" class="form-control" [(ngModel)]="_Nombre" name="_Nombre" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">
+                  Ingresa con tu email.
+            </small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">
+              Password
+            </label>
+                <input type="password" class="form-control" [(ngModel)]="_Pass" name="_Pass" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="Logearse()">
+          <span class="icon-lock"></span>
+            Entrar</button>
+        </form>
     </div>
-    <div class="inputs">
-
-        <label><span class="icon-lock"></span>Password</label>
-
-        <input type="password" [(ngModel)]="iUser.userPass" name="userPass" placeholder="Ingrese el email" style="padding: 7px;" />
-
-    </div> -->
-<!-- <div class="inputs">
-
-        <button class=" btn btn-success mt-3" (click)="validacion()" (keyup.enter)="validacion()">
-
-      <span class="icon-lock-open"></span> Ingresar
-
-    </button>
-
-    </div>
-    <span class="icon-warning-1" style="color: orange; font-size: 10pt;">Si no tienes cuenta primero registrate</span>
-</section> -->
+</div>
